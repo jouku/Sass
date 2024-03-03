@@ -1,22 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 body {
   font-family: "Mulish", "Courier New", Courier, monospace;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-header {
-  height: 100px;
-  padding: 20px;
+.blue-text {
+  color: #4A4FF2;
+  font-weight: bold;
+}
+
+.grey-text {
+  color: rgba(17, 17, 17, 0.6);
+  font-style: italic;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 32px;
+}
+
+header .header-nav {
+  height: 40px;
+  padding: 30px;
   display: block;
 }
-header div:nth-child(1) {
+header .header-nav div:nth-child(1) {
   float: left;
 }
-header div:nth-child(2) {
+header .header-nav div:nth-child(2) {
   float: right;
 }
-header div:nth-child(2) a {
+header .header-nav div:nth-child(2) a {
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
   color: #000000;
+}
+header .header-view {
+  display: grid;
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+header .header-view div:nth-child(2) {
+  align-self: flex-end;
+}
+header .header-view div {
+  margin: 20px;
+}
+header .header-view div hr {
+  float: left;
+  border: 1px solid rgba(17, 17, 17, 0.6);
+  width: 30px;
+  position: absolute;
 }/*# sourceMappingURL=index.css.map */
