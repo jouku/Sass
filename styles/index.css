@@ -146,4 +146,7 @@ footer .footer-nav div:nth-child(2) a {
 }
 footer .footer-nav div:nth-child(3) {
   justify-self: end;
+}
+footer .footer-nav div:nth-child(3) i {
+  padding-left: 10px;
 }/*# sourceMappingURL=index.css.map */
