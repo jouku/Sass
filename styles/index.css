@@ -12,6 +12,9 @@ body {
 
 .grey-text {
   color: rgba(17, 17, 17, 0.6);
+}
+
+.italic {
   font-style: italic;
 }
 
@@ -68,6 +71,10 @@ header .header-view hr {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+.grid-view .animate__animated:hover {
+  animation-name: headShake;
+  animation-duration: 1s;
+}
 .grid-view .grid-item:nth-child(1) {
   grid-row-start: 1;
   grid-row-end: 2;
@@ -123,9 +130,16 @@ header .header-view hr {
      object-fit: cover;
 }
 
-.animate__animated:hover {
-  animation-name: headShake;
-  animation-duration: 1s;
+.hardwork-view {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+.hardwork-view div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-self: center;
 }
 
 footer .footer-nav {

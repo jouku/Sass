@@ -16,6 +16,9 @@ body {
 
 .grey-text {
     color: $grey-color;
+}
+
+.italic {
     font-style: italic;
 }
 
@@ -79,6 +82,13 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+
+    .animate__animated {
+        &:hover {
+            animation-name: headShake;
+            animation-duration: 1s;
+        }
+    }
 
     .grid-item:nth-child(1) {
         grid-row-start: 1;
@@ -162,11 +172,18 @@ header {
     }
 }
 
-.animate__animated:hover {
-    animation-name: headShake;
-    animation-duration: 1s;
-}
+.hardwork-view {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
 
+    div:nth-child(2) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-self: center
+    }
+}
 
 footer {
     .footer-nav {
