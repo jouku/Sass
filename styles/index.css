@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 body {
   font-family: "Mulish", "Courier New", Courier, monospace;
-  padding-left: 350px;
-  padding-right: 350px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .blue-text {
@@ -16,6 +16,10 @@ body {
 
 .italic {
   font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 h1 {
@@ -133,13 +137,40 @@ header .header-view hr {
 .hardwork-view {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.hardwork-view div span {
+  align-self: center;
 }
 .hardwork-view div:nth-child(2) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-self: center;
+}
+
+.awards-view {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.awards-view hr {
+  border: 1px solid #D8D8D8;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.awards-view div {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr;
+  gap: 30px 10px;
+}
+.awards-view div div {
+  display: inline;
+}
+.awards-view div div p {
+  padding-bottom: 10px;
+}
+.awards-view div:nth-child(4n) {
+  justify-self: end;
 }
 
 footer .footer-nav {
