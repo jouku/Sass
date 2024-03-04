@@ -1,0 +1,29 @@
+footer {
+    .footer-nav {
+        display: grid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        grid-template-columns: 3fr 2fr 1fr;
+
+        a {
+            text-decoration: none;
+            color: $black-color;
+        }
+
+        div:nth-child(2) {
+            justify-self: center;
+
+            a {
+                padding-left: 20px;
+            }
+        }
+
+        div:nth-child(3) {
+            justify-self: end;
+
+            i {
+                padding-left: 10px;
+            }
+        }
+    }
+}

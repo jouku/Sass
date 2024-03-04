@@ -1,0 +1,38 @@
+body {
+    font-family: 'Mulish', 'Courier New', Courier, monospace;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.blue-text {
+    color: $blue-color;
+    font-weight: bold;
+}
+
+.grey-text {
+    color: $grey-color;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 32px;
+}

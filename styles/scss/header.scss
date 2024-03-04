@@ -1,0 +1,39 @@
+header {
+    .header-nav {
+        display: grid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        grid-template-columns: 3fr 2fr;
+
+        a {
+            text-decoration: none;
+            color: $black-color;
+        }
+
+        div:nth-child(2) {
+            justify-self: end;
+
+            a {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .header-view {
+        display: grid;
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+        grid-template-columns: 1fr 1fr;
+
+        div:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        hr {
+            border: 1px solid $grey-color;
+            width: 30px;
+            position: absolute;
+        }
+    }
+}
