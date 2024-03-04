@@ -66,4 +66,35 @@ header {
             }
         }
     }
+
+    .header-contact-view {
+        padding-top: 50px;
+        display: grid;
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+
+        input {
+            outline: 0;
+            font-family: 'Mulish', 'Courier New', Courier, monospace;
+
+            &[type=text],
+            &[type=email] {
+                border-width: 0 0 1px;
+                border-color: $grey-color;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+                width: 100%;
+            }
+
+            &[type=button] {
+                border-width: 0;
+                padding: 10px 20px 10px 20px;
+                color: $white-color;
+                background-color: $blue-color;
+            }
+        }
+    }
 }
