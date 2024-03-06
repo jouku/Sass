@@ -13,7 +13,12 @@ header {
         div:nth-child(2) {
             justify-self: end;
 
+            li {
+                float: left;
+            }
+
             a {
+                display: block;
                 padding-left: 20px;
             }
         }
