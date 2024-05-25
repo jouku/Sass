@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/9da8f4df44.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -90,7 +89,11 @@
 
     <section>
         <div class="grid-project-view">
-            <div class="grid-item"><img class="animate__animated" alt="Painter's palette with various colors. A paintbrush is seen picking up some brown paint from the palette." src="../images/1.jpg"></div>
+            <div class="grid-item">
+                <img data-sizes="auto" class="lazyload animate__animated"
+                    alt="Painter's palette with various colors. A paintbrush is seen picking up some brown paint from the palette."
+                    data-srcset="../images/1-320.jpg 320w, ../images/1-640.jpg 640w, ../images/1-1280.jpg 1280w">
+            </div>
             <div class="grid-item">
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                     alteration
@@ -101,9 +104,20 @@
                     in the middle of text. You need to be sure there isn't anything embarrassing hidden in the middle of
                     text.</p>
             </div>
-            <div class="grid-item"><img class="animate__animated" alt="A colorful paint on a white background." src="../images/2.jpg"></div>
-            <div class="grid-item"><img class="animate__animated" alt="Abstract painting featuring various shades of blue and teal." src="../images/3.jpg"></div>
-            <div class="grid-item"><img class="animate__animated" alt="Paint brushes present with a paint faded in the background." src="../images/4.jpg"></div>
+            <div class="grid-item">
+                <img data-sizes="auto" class="lazyload animate__animated" alt="A colorful paint on a white background."
+                    data-srcset="../images/2-320.jpg 320w, ../images/2-640.jpg 640w, ../images/2-1280.jpg 1280w">
+            </div>
+            <div class="grid-item">
+                <img data-sizes="auto" class="lazyload animate__animated"
+                    alt="Abstract painting featuring various shades of blue and teal."
+                    data-srcset="../images/3-320.jpg 320w, ../images/3-640.jpg 640w, ../images/3-1280.jpg 1280w">
+            </div>
+            <div class="grid-item">
+                <img data-sizes="auto" class="lazyload animate__animated"
+                    alt="Paint brushes present with a paint faded in the background."
+                    data-srcset="../images/4-320.jpg 320w, ../images/4-640.jpg 640w, ../images/4-1280.jpg 1280w">
+            </div>
         </div>
     </section>
 
@@ -129,6 +143,8 @@
         </div>
     </footer>
 
+    <script src="https://kit.fontawesome.com/9da8f4df44.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
 </body>
 
 </html>
